@@ -1,0 +1,7 @@
+{
+  "predef": [
+    "console",
+    "hello"
+  ],
+  "strict": false
+}
