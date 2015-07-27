@@ -1,25 +1,36 @@
 # Ember-cli-hello
+An ember-cli addon for the hello.js client-side authentication library.
 
-This README outlines the details of collaborating on this Ember addon.
+## What is hello.js?
+
+From hello.js homepage http://adodson.com/hello.js:
+
+> A client-side JavaScript SDK for authenticating with OAuth2 (and OAuth1 with a oauth proxy) web services and querying their
+> REST APIs. HelloJS standardizes paths and responses to common APIs like Google Data Services, Facebook Graph and Windows Live > Connect. It's modular, so that list is growing. No more spaghetti code!
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+In your ember-cli project directory, run:
 
-## Running
+`npm install ember-cli-hello --save-dev`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Configuration
 
-## Running Tests
+In your project's `environment.js` file add the client id for the services you want and any global options that will be passed into the `hello.login` method. As in http://adodson.com/hello.js/#helloinit
 
-* `ember test`
-* `ember test --server`
+```
+...
+  APP: {
+    hello: {
+      services: {
+        facebook: YOUR-FB-APP-ID
+      },
+      options: {
+        scope: 'email'
+      }
+    }
+  }
+...
+```
 
-## Building
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
