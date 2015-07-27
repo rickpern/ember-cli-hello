@@ -34,4 +34,8 @@ In your project's `environment.js` file add the client id for the services you w
 ...
 ```
 
+## TODO
+* Only load service libraries that you've included in the config instead of loading hello.all
+* Add basic auth event handlers to initializer?
+
 
