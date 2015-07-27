@@ -19,6 +19,7 @@ In your ember-cli project directory, run:
 In your project's `environment.js` file add the client id for the services you want and any global options that will be passed into the `hello.login` method. As in http://adodson.com/hello.js/#helloinit
 
 ```
+# config/environment.js
 ...
   APP: {
     hello: {
