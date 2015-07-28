@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-hello",
-  "version": "0.0.1",
   "description": "An ember-cli addon for the hello.js client-side authentication library.",
+  "version": "1.0.0",
   "directories": {
     "doc": "doc",
     "test": "tests"
